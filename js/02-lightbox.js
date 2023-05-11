@@ -18,12 +18,11 @@ gallery.append(fragment);
 
 const images = document.querySelectorAll(".gallery__item");
 let galleryBox = new SimpleLightbox(".gallery a", { captionDelay: 250 });
-images.forEach((item) => {
-  item.addEventListener("click", () => {
-    galleryBox.on("show.simplelightbox", function () {
-      console.log(3);
-    });
 
-    galleryBox.on("error.simplelightbox", function (e) {});
+images.addEventListener("click", () => {
+  galleryBox.on("show.simplelightbox", function () {
+    console.log(3);
   });
+
+  galleryBox.on("error.simplelightbox", function (e) {});
 });

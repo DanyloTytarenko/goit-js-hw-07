@@ -8,7 +8,7 @@ galleryItems.forEach((item, index) => {
   image.classList.add("gallery__item");
   image.insertAdjacentHTML(
     "afterbegin",
-    `<a class="gallery__link" href=${item.original}>
+    `<a class="gallery__link" href="#">
     <img id=${index} class="gallery__image" src=${item.preview}  data-source=${item.original}" alt=${item.description}/>
     </a>`
   );
